@@ -233,7 +233,7 @@ void avm_tostring(avmcell *element)
     if (assert(element->data.strVal))
     {
         free(element->data.strVal);
-        ß
+        
     }
     else
     {

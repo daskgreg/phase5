@@ -10,7 +10,7 @@ typedef double (*arithemtic_func_t)(double x, double y);
 void execute_add(instruction* instr);
 void execute_sub(instruction* instr);
 void execute_mul(instruction* instr);
-void execute_div(instruction* instßr);
+void execute_div(instruction* instr);
 void execute_mod(instruction* instr);
 
 double add_impl (double x, double y);

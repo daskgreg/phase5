@@ -4,8 +4,8 @@
 #define AVM_SAVEDPC_OFFSET 3
 #define AVM_SAVEDTOP_OFFSET 2
 #define AVM_SAVEDTOPSP_OFFSET 1
-ß
-void avm_push_enviromenßt_arg(instruction *instr);
+
+void avm_push_enviroment_arg(instruction *instr);
 void avm_dec_top(void);
 void avm_callsavenviroment(void);
 

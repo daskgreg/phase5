@@ -9,7 +9,7 @@
 #include "vm.h"
 #include "functions.h"
 #include "arithmetics_instructions.h"
-unsigned totaßActuals = 0;
+unsigned totaActuals = 0;
 
 /* push arg PART 8/11 */
 /* print to call prepei na valoume ta arguments */
@@ -100,7 +100,7 @@ unsigned avm_totalactuals(void)
     return avm_get_envvalue(topsp + AVM_NUMACTUALS_OFFSET);
 }
 
-avm_memcell *avm_getactual(unsigned ßi)
+avm_memcell *avm_getactual(unsigned i)
 {
     assert(i < avm_totalactuals());
     return &stack[topsp + AVM_STACKENV_SIZE + 1 + i]
@@ -126,7 +126,7 @@ void libfunc_typeof(void)
         avm_error("one argument (not %d) expected in 'typeof'!", n);
     }
     else
-    {ß
+    {
         avm_memcellclear(&retval);
         retval.type = string_m;
         retval.data.strVal = strdup(typeStrings[avm_getactual(0)->type]);
